@@ -3,7 +3,7 @@
   --clr-white-100: hsl(0, 16%, 96%);
   --clr-text: hsl(0, 0%, 33%);
   --clr-green: hsl(83, 28%, 44%);
-  --clr-green: hsl(0, 2%, 24%);
+  --clr-dark: hsl(0, 2%, 24%);
 
   /*===== body weights =====*/
 
@@ -168,12 +168,17 @@ h1 {
   padding-inline: 2em;
   display: flex;
   justify-content: center;
+  transition: all 500ms ease;
 }
 
-.hero__list .active {
-  background-color: var(--clr-green);
+.hero__list {
   color: white;
   outline: none;
+}
+.hero__list .hero__list__items a:hover,
+.about__us .article__content a:hover {
+  background-color: var(--clr-white-100);
+  color: var(--clr-dark);
 }
 /* ===== toggleMenu ===== */
 .toggleMenu {
@@ -384,7 +389,7 @@ figcaption {
   padding-block: 2rem;
   padding-inline: 1rem;
 
-  outline: 2px solid var(--clr-green);
+  outline: 2px solid var(--clr-dark);
   outline-offset: -1rem;
   display: flex;
   flex-direction: column;
@@ -405,10 +410,8 @@ figcaption {
   padding-inline: 1px;
 }
 .about__us .article__content a {
-  background-color: var(--clr-green);
-  border: none;
-  outline: none;
   display: inline-block;
+  transition: all 500ms ease;
 }
 
 @media screen and (min-width: 710px) {
@@ -491,7 +494,7 @@ figcaption {
 /*footer*/
 /*===== page footer =====*/
 .page__footer {
-  background: var(--clr-green);
+  background: var(--clr-dark);
   padding-block: 2rem;
   padding-inline: 1rem;
 }
@@ -513,9 +516,6 @@ figcaption {
   width: 100%;
 }
 .page__footer .footer__list .items {
-  font-weight: var(--fm-small);
-  font-style: normal;
-  font-size: var(--clamp-small);
 }
 .page__footer .footer__list .items > * {
   color: var(--clr-white-100);
