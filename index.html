@@ -65,7 +65,7 @@
         </ul>
       </nav>
       <!--HERO SECTION-->
-      <section class="hero__section">
+      <div class="hero__section">
         <article class="hero__article">
           <h1>
             Profesjonalne usługi <br />
@@ -81,7 +81,7 @@
             </li>
           </ul>
         </article>
-      </section>
+      </div>
     </header>
 
     <!--ARTICLES SECTION-->
@@ -469,66 +469,76 @@
         </article>
       </section>
     </section>
-    <!-- PAGE FOOTER -->
+    <!-- FOOTER SECTION -->
     <footer class="page__footer">
-      <!-- FOOTER HEADER -->
-      <section class="footer__header">
+      <figure class="footer__logo">
         <img
-          class="footer__logo"
-          src="./images/logo/company__logo-sm.png"
-          alt="Wrapzo usługi detailingowe Śląsk"
-          title="Wrapzo usługi detailingowe Śląsk"
+          src="./images/logo/company__logo-l.png"
+          alt="Wrapzio logo - usługi z zakresu detailingu samochodowego na terenie Śląska"
+          title="Wrapzio logo - usługi z zakresu detailingu samochodowego na terenie Śląska"
+          loading="lazy"
         />
-          <ul class="footer__list">
-            <li class="list__item">
-              <a href="./sites/wrapzo.html">O Nas</a>
-            </li>
-            <li class="list__item">
-              <a href="./sites/uslugi.html">Nasze Usługi</a>
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="list__item">
-              <a href="./sites/galeria.html">Galeria</a>
-            </li>
-            <li class="list__item">
-              <a href="./sites/cennik.html">Cennik</a>
-            </li>
-       
-      </section>
-      <!-- FOOTER SECTION -->
-      <section class="footer__contact--section">
-        <!-- FOOTER LIST -->
-        <ul class="contact__list">
-          <li class="list__item">
-            <img
-              src="./images/assets/pin.png"
-              alt="adres firmy detailingowej wrapzo"
-            />43-187 Orzesze ul. Mieszka I 1
-          </li>
-          <li class="list__item">
-            <img
-              src="./images/assets/phone.png"
-              alt="skontaktuje się z wrapzo"
-            /><a
-              href="tel:+48-571-206-581"
-              aria-label="numer telefonu do firmy detailingowej wrapzo"
-              >571-206-581</a
-            >
-          </li>
-        </ul>
-        <!-- FOOTER LIST -->
-        <ul class="footer__social-ico">
-          <li class="list__item"><p>Bądz na bieżąco</p></li>
-          <li class="list__item">
+        <figcaption>Profesjonalne Usługi Detailingowe</figcaption>
+      </figure>
+
+      <!-- FOOTER LIST -->
+      <ul class="footer__list">
+        <li class="list__items"><a href="./sites/wrapzo.html">O nas</a></li>
+        <li class="list__items">
+          <a href="./sites/wrapzo.html">Kim jesteśmy</a>
+        </li>
+      </ul>
+      <!-- FOOTER LIST-->
+      <ul class="footer__list">
+        <li class="list__items"><a href="./sites/uslugi.html">Usługi</a></li>
+        <li class="list__items">
+          <a href="./sites/przyciemnianie-szyb.html">Przyciemnianie szyb</a>
+        </li>
+        <li class="list__items">
+          <a href="./sites/folia-ppf.html">Folia ochronna PPF</a>
+        </li>
+        <li class="list__items">
+          <a href="./sites/detailing.html">Detailing samochodowy</a>
+        </li>
+        <li class="list__items">
+          <a href="./sites/zmiana-koloru.html">Zmiana koloru samochodu</a>
+        </li>
+        <li class="list__items">
+          <a href="./sites/korekta-lakieru.html">Korekta lakieru</a>
+        </li>
+        <li class="list__items">
+          <a href="./sites/powloki-ceramiczne.html">Powłoki ceramiczne</a>
+        </li>
+      </ul>
+      <!--FOOTER LIST-->
+      <ul class="footer__list">
+        <li class="list__items">
+          <a href="./sites/kontakt.html">Kontakt</a>
+        </li>
+        <li class="list__items">
+          <img
+            src="./images/assets/pin.png"
+            alt="adres firmy detailingowej wrapzo"
+          />
+          <span>43-187 Orzesze ul. Mieszka I 1</span>
+        </li>
+        <li class="list__items">
+          <img src="./images/assets/phone.png" alt="skontaktuje się z wrapzo" />
+          <a
+            href="tel:+48-571-206-581"
+            aria-label="numer telefonu do firmy detailingowej wrapzo"
+            >571-206-581</a
+          >
+        </li>
+        <ul class="social__media">
+          <li class="list__items"><p>Odwiedź nas</p></li>
+          <li class="list__items">
             <a
               href="https://www.facebook.com/wrapzodetailing"
               target="_blank"
               aria-label="link do strony wrapzo na facebooku"
               ><img src="./images/assets/facebook.png" alt="facebook icon"
             /></a>
-          </li>
-          <li class="list__item">
             <a
               href="https://www.instagram.com/wrapzo_detailing/"
               target="_blank"
@@ -536,8 +546,7 @@
             >
               <img src="./images/assets/instagram.png" alt="instagram icon"
             /></a>
-          </li>
-          <li class="list__item">
+
             <a
               href=""
               target="_blank"
@@ -547,7 +556,7 @@
             /></a>
           </li>
         </ul>
-      </section>
+      </ul>
     </footer>
     <script src="./scripts/main.js"></script>
   </body>
